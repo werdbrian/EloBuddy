@@ -14,9 +14,9 @@ namespace Kassawin
 
         public static void GetSpells()
         {
-            Q = new Spell.Targeted(SpellSlot.Q, 650);
+            Q = new Spell.Targeted(SpellSlot.Q, 700);
             W = new Spell.Active(SpellSlot.W);
-            E = new Spell.Skillshot(SpellSlot.E, 400, SkillShotType.Cone, (int) 0.5f, int.MaxValue, 10);
+            E = new Spell.Skillshot(SpellSlot.E, 650, SkillShotType.Cone, (int) 0.5f, int.MaxValue, 10);
             R = new Spell.Skillshot(SpellSlot.R, 700, SkillShotType.Circular, (int) 0.5f, int.MaxValue, 150);
             if (Utils._Player.GetSpellSlotFromName("summonerdot") != SpellSlot.Unknown)
                 Ignite = new Spell.Targeted(Utils._Player.GetSpellSlotFromName("summonerdot"), 550);
