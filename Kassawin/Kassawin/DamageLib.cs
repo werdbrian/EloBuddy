@@ -48,4 +48,3 @@ namespace Kassawin
             return damage;
         }
     }
-}
