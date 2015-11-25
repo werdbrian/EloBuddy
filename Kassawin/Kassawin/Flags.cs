@@ -34,7 +34,7 @@ namespace Kassawin
                 Utils.isChecked(MenuX.Combo, "ComboE"))
             {
                 var pred = Spells.E.GetPrediction(target);
-                if (pred.HitChance >= HitChance.High)
+                if (pred.HitChance >= HitChance.Medium)
                     Spells.E.Cast(target);
             }
             if (target.IsValidTarget(Spells.R.Range) &&
