@@ -8,14 +8,14 @@ namespace Kassawin
         public static float QDamage(Obj_AI_Base target)
         {
             return Utils._Player.CalculateDamageOnUnit(target, DamageType.Magical,
-                (float) (new[] {0, 80, 105, 130, 155, 180}[Spells.Q.Level] + 0.7*Utils._Player.FlatMagicDamageMod
+                (float) (new[] {0, 70, 95, 120, 145, 170}[Spells.Q.Level] + 0.7*Utils._Player.FlatMagicDamageMod
                     ));
         }
 
         public static float WDamage(Obj_AI_Base target)
         {
             return Utils._Player.CalculateDamageOnUnit(target, DamageType.Magical,
-                (float) (new[] {0, 40, 65, 90, 115, 140}[Spells.W.Level] + 0.6*Utils._Player.FlatMagicDamageMod
+                (float) (new[] {0, 40, 65, 90, 115, 140}[Spells.W.Level] + 0.7*Utils._Player.FlatMagicDamageMod
                     ));
         }
 
