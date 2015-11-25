@@ -20,7 +20,7 @@ namespace Kassawin
 
         public static void Combo()
         {
-            var target = TargetSelector.GetTarget(Spells.Q.Range+50, DamageType.Magical);
+            var target = TargetSelector.GetTarget(Spells.Q.Range, DamageType.Magical);
             if (target == null) return;
 
             if (target.IsValidTarget(Spells.Q.Range) &&
@@ -35,10 +35,7 @@ namespace Kassawin
             {
                 var pred = Spells.E.GetPrediction(target);
                 if (pred.HitChance >= HitChance.High)
-                {
                     Spells.E.Cast(target);
-                    Spells.W.Cast();
-                }
             }
             if (target.IsValidTarget(Spells.R.Range) &&
                 Spells.R.IsReady() &&
