@@ -37,6 +37,7 @@ namespace Kassawin
                 if (pred.HitChance >= HitChance.Medium)
                 {
                     Spells.E.Cast(target);
+                    Spells.W.Cast();
                 }
             }
             if (target.IsValidTarget(Spells.R.Range) &&
